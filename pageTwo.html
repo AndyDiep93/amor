@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Happy Anniversary!</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-container">
+    <img class="top-heart" src="images/heart.png" alt="heart-img">
+    <h1>Happy Anniversary!</h1>
+    <p>I love you <span class="more"><b>MORE! MORE!</b></span></p>
+    <img class="bottom-heart" src="images/love.png" alt="love-img">
+    <img class="us" src="images/us.png" alt="us-img">
+  </div>
+  <div class="middle-container">
+    <div class="profile">
+      <img class="man" src="images/man.png" alt="">
+      <h2>I Have More!</h2>
+      <p class="intro">And here you thought my letters were long 💌</p>
+    </div>
+    <hr>
+
+    <div class="skills">
+      <h2>Reasons Why I Love You So Much!</h2>
+
+      <div class="skill-row">
+        <img class="kiss" src="images/kiss.png" alt="">
+        <h3>Your Kisses Are So Addicting! 👄</h3>
+        <p class="kiss-description">How can one person bring so much joy into my life just by pressing
+          their lips onto mine?! I can never have enough of your kisses. They are so warm, cute, and luscious!
+          If I had an addiction, it would be your kisses and I don’t think I can go a day without them.</p>
+      </div>
+
+      <div class="skill-row">
+        <img class="grad" src="images/grad.png" alt="">
+        <h3>I am so Proud of Everything You Have Achieved! 🥰</h3>
+        <p class="grad-description">From the first day we’ve started dating, I have seen you grow so much already
+          from every achievement you’ve accomplished. Watching you graduate in your field of study to getting a job
+           in that field in 3-4 months! Not many people can say that the have done that! I am so proud of you, and I
+           can’t wait to be part of every milestone you achieve!</p>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <img class="stampede" src="images/stampede.png" alt="">
+      <h3> Were Meant For Each Other 👨‍❤️‍💋‍👨</h3>
+      <p class="stampede-description">I couldn’t count the number of similarities we’ve had since we started talking
+        to each other. Some relationships are like oil and water, but how I see ours, we are like dirt and worms 🐛.
+        Our initials and birthdays are practically the same!! You somehow make me feel so comfortable and vulnerable
+        at the same time, you have helped me grow so much in the year we were together. I want to help support you and
+        be by your side forever just how you’ve helped me!</p>
+    </div>
+  </div>
+
+  <div class="skill-row">
+    <img class="zoo" src="images/zoo.png" alt="">
+    <h3>Experiencing New Things With You 🏌️‍♂️🏌️‍♀️</h3>
+    <p class="zoo-description">Experiencing new things with you is something that I would have probably not do on my own and so I
+      love experiencing new things with you because it takes me out of my comfort zone. We can make new memories together and talk
+      while laughing about them. There so many things I enjoyed doing with you and that’s because we experienced them together.</p>
+  </div>
+</div>
+<br>
+<hr>
+
+<div class="contact-me">
+  <h2>You Toot I Toot 💨</h2>
+</div>
+</div>
+
+
+<div class="bottom-container">
+  <p>Pages</p>
+  <a class="footer-link" href=pageOne.html>1</a>
+  <a class="footer-link" href=pageThree.html>3</a>
+
+  <p class="copyright">© 2022 Andy Diep</p>
+</div>
+
+<script>
+alert("Love Calculator - Calculate your love!");
+var your = prompt("What is your name?");
+
+var their = prompt("What is their name?");
+
+var loveScore = Math.random() * 100;
+
+loveScore = Math.floor(loveScore) + 1;
+
+if( your == "ale" || your =="Ale" || your =="alejandra" || your =="Alejandra" && their == "andy" || their == "Andy" ){
+
+  alert("Your love score is 100%. You love each other like Kanye loves Kanye.");
+
+
+}
+
+ else if( your == "andy" || your == "Andy" && their == "ale" || their =="Ale" || their =="alejandra" || their =="Alejandra" ){
+
+  alert("Your love score is 100%. You love each other like Kanye loves Kanye.");
+}
+
+else if( your == "ale diaz" || your =="Ale Diaz" || your =="alejandra diaz" || your =="Alejandra Diaz" && their == "andy diep" || their == "Andy Diep" ){
+
+  alert("Your love score is 100%. You love each other like Kanye loves Kanye.");
+
+
+}
+
+else if( your == "andy diep" || your == "Andy Diep" && their == "ale diaz" || their =="Ale Diaz" || their =="alejandra diaz" || their =="Alejandra Diaz" ){
+
+  alert("Your love score is 100%. You love each other like Kanye loves Kanye.");
+
+
+}
+
+else if( loveScore > 70){
+
+  alert("Your love score is " + loveScore + "%" + " I am happy for you guys!");
+
+}
+
+else if (loveScore > 30 && loveScore <= 70){
+
+  alert("Your love score is " + loveScore + "%");
+
+}
+
+else if (loveScore <= 30){
+
+  alert("Your love score is " + loveScore + "%" + " You go together like oil and water.");
+
+}
+
+
+else{
+  alert("Your love score is love score is quite low, lets keep it a secret cause its a bit embarassing");
+  //
+}
+</script>
+</body>
+</html>

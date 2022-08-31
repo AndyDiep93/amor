@@ -1,0 +1,261 @@
+body{
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1{
+  color: #BF9BD3;
+  font-size: 5.625rem;
+  /* line-height: 2; */
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+
+h2{
+  color: #BF9BD3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  /* font-weight: normal; */
+  padding-bottom: 10px;
+}
+
+.toot{
+  color: #BD93F9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  /* font-weight: normal; */
+  padding-bottom: 50px;
+}
+
+h3{
+  color: #A266F7;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  line-height: 2;
+}
+
+.page{
+    line-height: 2;
+    color: #F8F5F6 ;
+}
+
+hr{
+  border: dotted #D3C9C7 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 50px auto;
+  margin-bottom: 50px;
+}
+
+a{
+  color: #A266F7 ;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #A266F7;
+}
+
+.top-container{
+  background-color: #F8F5F6;
+  position: relative;
+  padding-top: 100px;
+  color: #BF9BD3;
+}
+
+
+.middle-container{
+  margin: 100px 0;
+
+}
+.bottom-container{
+  background-color: #BD93F9;
+  padding: 50px 0 20px;
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.pro{
+  text-decoration: underline;
+}
+
+.intro{
+  width: 30%;
+  margin:auto;
+}
+
+.contact-message{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.copyright{
+  color: #F8F5F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+
+.top-heart{
+  width: 5%;
+  height: auto;
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-heart{
+  width: 5%;
+  height: auto;
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.us{
+  width: 13%;
+  height: auto;
+}
+.dinner{
+  width: 25%;
+  float: left;
+  padding-right: 20px;
+}
+
+.dinner-description{
+  margin: auto;
+padding-bottom: 50px;
+}
+
+.christmas{
+  width: 25%;
+  float: right;
+}
+
+.christmas-description{
+  margin: auto;
+}
+
+.valentines{
+  width: 25%;
+  float: left;
+  padding-right: 20px;
+}
+
+.valentines-description{
+  margin: auto;
+padding-bottom: 50px;
+}
+
+.dessert{
+  width: 25%;
+  float: right;
+}
+
+.dessert-description{
+  margin: auto;
+}
+
+.kiss{
+  width: 25%;
+  float: left;
+  padding-right: 20px;
+}
+
+.kiss-description{
+  margin: auto;
+padding-bottom: 50px;
+}
+
+.grad{
+  width: 25%;
+  float: right;
+}
+
+.grad-description{
+  margin: auto;
+}
+
+.stampede{
+  width: 25%;
+  float: left;
+  padding-right: 20px;
+}
+
+.stampede-description{
+  margin: auto;
+padding-bottom: 50px;
+}
+
+.zoo{
+  width: 25%;
+  float: right;
+}
+
+.zoo-description{
+  margin: auto;
+}
+
+.longDistance{
+  width: 25%;
+  float: left;
+  padding-right: 20px;
+}
+
+.longDistance-description{
+  margin: auto;
+padding-bottom: 50px;
+}
+
+.vegas{
+  width: 25%;
+  float: right;
+}
+
+.vegas-description{
+  margin: auto;
+}
+
+.banffTwo{
+  width: 25%;
+  float: left;
+  padding-right: 20px;
+}
+
+.banffTwo-description{
+  margin: auto;
+padding-bottom: 50px;
+}
+
+.adventures{
+  width: 25%;
+  float: right;
+}
+
+.adventures-description{
+  margin: auto;
+}
+
+.calendar{
+  width: 5%;
+  height: auto;
+  margin-top: 1cm;
+  margin-bottom: -0.5cm;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-link{
+  color: #F8F5F6 ;
+}

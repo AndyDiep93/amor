@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Happy Anniversary!</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<style>
+.p {
+background-image: url("images/heart.png");
+}
+
+.pressed {
+box-shadow: 0 3px 4px 0 #DBEDF3;
+opacity: 0.5;
+}
+
+.red {
+color: red;
+}
+.love {
+outline: none;
+border: 10px solid #404B69;
+font-size: 2rem;
+font-family: 'Arvo', cursive;
+line-height: 2;
+font-weight: 900;
+color: #A266F7;
+text-shadow: 3px 0 #DBEDF3;
+border-radius: 15px;
+display: inline-block;
+width: 100px;
+height: 100px;
+text-align: center;
+margin: 10px;
+background-color: white;
+}
+
+</style>
+<body>
+
+  <div class="top-container">
+    <img class="top-heart" src="images/heart.png" alt="heart-img">
+    <h1>Happy Anniversary!</h1>
+        <p>I love you <span class="more"><b>MORE!</b></span></p>
+    <img class="bottom-heart" src="images/love.png" alt="love-img">
+    <img class="us" src="images/us.png" alt="us-img">
+  </div>
+  <div class="middle-container">
+    <div class="profile">
+      <img class="man" src="images/man.png" alt="">
+      <h2>You Made It!!</h2>
+      <p class="intro">I know, you had to read a lot but you are finally on the last page! 🙌🏻</p>
+    </div>
+    <hr>
+
+    <div class="skills">
+      <h2>Reasons Why I Love You So Much!</h2>
+
+      <div class="skill-row">
+        <img class="longDistance" src="images/longDistance.png" alt="">
+        <h3>Not Being By Your Side Makes Me Realize How Much I Want to be With You All the Time 🕒</h3>
+        <p class="longDistance-description">I hate how time goes by so slow when we are apart. Seconds
+          feel like minutes, minutes like hours, hours liked days. Time is so slow when we are not together.
+          Being with you makes me feel like I am complete and without you, I am always wishing for time to go
+          by quick. Maybe its time we built that time machine together!</p>
+      </div>
+
+      <div class="skill-row">
+        <img class="vegas" src="images/vegas.png" alt="">
+        <h3>Travelling with You is the Best! 🛫</h3>
+        <p class="christmas-description">From mini road trips to the trip to Vegas, all I can say is, I want more.
+          I want us to be able to travel to many places together and create long lasting memories with you. Its so
+          fun being able to do that with you and I hope we can do that more often soon mi amor. I am aching for more
+          as I still think about every trip, we’ve had every so often and never fails to bring a smile to my face.</p>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <img class="banffTwo" src="images/banffTwo.png" alt="">
+      <h3>I Enjoy Doing Things with You Again and Again 🔄</h3>
+      <p class="banffTwo-description">Even when we are doing something or doing nothing, I can somehow seem to even enjoy
+        every moment of it with you. We could be doing things by ourselves when we are together but just your presence near
+        me makes me happy. I love experiencing old memories with you and I am enjoying the way we are reliving our first official
+        date again right now. I can’t believe it’s been over a year since that day!</p>
+    </div>
+  </div>
+
+  <div class="skill-row">
+    <img class="adventures" src="images/adventures.png" alt="">
+    <h3>Our Journey is Something I Cannot Wait to Continue! 🤵🏻👰🏻</h3>
+    <p class="adventures-description">I tried to keep it short and simple but that never works out for me. One thing I would like you
+      to know is that I can’t wait to see how year after this one will go, and the one after, and after, and after and forever. We’ve
+      done so much this past year and I enjoyed the journey with you so far and I really can’t wait to see what else is in store. I love
+      you so much mi amor and I am so grateful to have you in my life and thank you for letting me be part of yours. HAPPY ONE YEAR ANNIVERSARY!!!</p>
+  </div>
+
+</div>
+    <br>
+    <hr>
+
+    <div class="skill">
+      <img class="calendar" src="images/calendar.png" alt="">
+      <h3>These are the 12 Reasons Why I Love You! </h3>
+    </div>
+
+<!-- Button -->
+    <h3 id="title">Press "P"</h2>
+  <div class="set">
+    <button class="p love">p</button>
+  </div>
+
+<br>
+
+  <div class="bottom-container">
+    <p>Pages</p>
+    <a class="footer-link" href=pageOne.html>1</a>
+      <a class="footer-link" href=pageTwo.html>2</a>
+
+    <p class="copyright">© 2022 Mi Amor</p>
+  </div>
+
+<!-- Scripts -->
+  <script>
+
+  //Detecting Button Press
+
+  var numberOfDrumButtons = document.querySelectorAll(".love").length;
+
+  for (var i = 0; i <numberOfDrumButtons; i++){
+
+    document.querySelectorAll(".love")[i].addEventListener("click", function (){
+
+      var buttonInnerHTML = this.innerHTML;
+
+      makeSound(buttonInnerHTML);
+
+      buttonAnimation(buttonInnerHTML)
+
+    });
+
+  }
+
+  //Detecting Keyboard Press
+
+  document.addEventListener("keydown", function(event){
+
+    makeSound(event.key);
+
+  buttonAnimation(event.key);
+  });
+
+  function makeSound(key){
+
+    switch (key) {
+      case "p":
+      var crash = new Audio("sounds/ilysm.mp3");
+      crash.play();
+      break;
+
+    default: console.log();
+
+    }
+
+  }
+  function buttonAnimation(currentKey){
+
+    var activeButton = document.querySelector("." + currentKey);
+
+    activeButton.classList.add("pressed");
+
+    setTimeout(function(){
+      activeButton.classList.remove("pressed");
+    }, 100);
+
+  }
+  </script>
+
+</body>
+</html>
